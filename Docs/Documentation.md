@@ -25,7 +25,7 @@ This will install dependencies prom package.json
 
 ### Built With
 
-####This project uses:
+###This project uses:
 
     "bootstrap": "4.1.1"   
     "react": "16.4.1"    
@@ -44,8 +44,8 @@ Here's a brief intro about what a developer must do in order to start developing
 the project further:
 
 ```shell
-git clone https://github.com/emoalb/tourist-guidebook.git
-cd tourist-guidebook/
+git clone https://github.com/emoalb/blog-system.git
+cd blog-system/
 npm install
 ```
 
@@ -62,7 +62,7 @@ npm start
 ### Deploying / Publishing
 When publishing a minimised version should be created:
 ```shell
-cd /tourist-gudebook
+cd /blog-system
 npm run build
 ```
 ## Versioning
