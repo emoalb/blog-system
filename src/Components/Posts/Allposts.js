@@ -32,6 +32,10 @@ constructor(props) {
     }
 
     render() {
+        const style = {
+            bottom: 30,
+            margin: "20px"
+        };
        let  queries = [{
            columns: 1,
            query: 'min-width: 500px',
@@ -45,14 +49,15 @@ constructor(props) {
             columns: 3,
             query: 'min-width: 1000px',
            gap :'100px'
-        }];
+        }
+       ];
         let Posts = this.state.posts;
         if(Posts===undefined)Posts=[];
         return (
-                <div className="container">
+                <div style={style} className="container">
                     <Navbar/>
                     <h4>Home</h4>
-                <Columns queries={queries}>
+                <Columns  queries={queries}>
                 {
                     Posts.map((post,index)=> {
                     return (

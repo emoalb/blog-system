@@ -63,6 +63,10 @@ export default class Favorites extends Component{
         }
     }
     render (){
+        const style = {
+            bottom: 30,
+            margin: "20px"
+        };
         let  queries = [{
             columns: 1,
             query: 'min-width: 500px',
@@ -78,7 +82,7 @@ export default class Favorites extends Component{
                 gap :'100px'
             }];
       return (
-          <div className="container">
+          <div style={style} className="container">
               <Navbar/>
               <h4>Favorites</h4>
               <Columns queries={queries}>

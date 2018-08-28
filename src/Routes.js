@@ -20,7 +20,6 @@ const Router = ()=>(
                 <Route path ='/edit/:_id' component = {Edit}/>
                 <Route path='/view/favorites' component = {Favorites} />
                 <Route exact path='/auth/logout' render ={Logout} />
-
             </Switch>
                     );
 

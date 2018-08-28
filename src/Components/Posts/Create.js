@@ -18,7 +18,8 @@ export default class Create extends Component   {
             form:Object.assign(this.state.form,validForm)
         });
     }
-    handleSubmit(){
+    handleSubmit(e){
+        e.preventDefault();
         let imgUrl = this.state.form.imageurl;
         let title = this.state.form.title;
         let context = this.state.form.context;
@@ -49,7 +50,7 @@ export default class Create extends Component   {
                                placeholder="Enter description"/>
                     </div>
 
-                    <button onClick={this.handleSubmit} type="button" className="btn btn-primary">Submit</button>
+                    <button onClick={this.handleSubmit} type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
         );
