@@ -40,6 +40,11 @@ export default class Details extends Component
     }
 
 render() {
+    const style = {
+        width: "70hv",
+        bottom: 30,
+        margin: "20px"
+    };
     let buttonDelete ='';
     let buttonEdit ='';
     if (sessionStorage.getItem('username')===this.state.post.username || sessionStorage.getItem('username')==='admin') {
@@ -48,7 +53,8 @@ render() {
         buttonDelete = <button type="button" onClick={this.Delete}  className="btn btn-outline-danger">Delete</button>
     }
     return (
-        <div className="container">
+
+        <div className="card" style={style}>
             <Navbar/>
             <h4>Details</h4>
             <img className="card-img-top" alt='' src={this.state.post.imgUrl}/>
